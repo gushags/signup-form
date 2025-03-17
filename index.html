@@ -18,10 +18,32 @@
       </p>
     </section>
     <main>
-      <form action="POST">
+      <h2>
         This is not a real online service! You know you need something like this
-        in your life to help you realize your deepest dreams. Sign up now to get
-        started. You know you want to! Let's do this!
+        in your life to help you realize your deepest dreams. Sign up
+        <em>now</em> to get started.
+      </h2>
+      <h2>You <em>know</em> you want to!</h2>
+      <form action="POST">
+        <legend>Let's do this!</legend>
+
+        <label for="first-name">FIRST NAME</label>
+        <input type="text" name="first-name" />
+
+        <label for="last-name">LAST NAME </label>
+        <input type="text" name="last-name" />
+
+        <label for="email">EMAIL</label>
+        <input type="email" name="email" />
+
+        <label for="phone">PHONE NUMBER</label>
+        <input type="tel" name="phone" />
+
+        <label for="pass">PASSWORD</label>
+        <input type="password" name="pass" />
+
+        <label for="conf-pass">CONFIRM PASSWORD</label>
+        <input type="password" name="conf-pass" />
       </form>
     </main>
   </body>

@@ -113,6 +113,9 @@ h1 {
   font-size: 5rem;
   padding: 25px 0 0 15px;
 }
+h2 {
+  padding-bottom: 20px;
+}
 section {
   height: 100vh;
   background-image: url("img/GreenLeafPlantPhoto.jpg");
@@ -123,4 +126,8 @@ section {
 
 main {
   flex: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
 }
