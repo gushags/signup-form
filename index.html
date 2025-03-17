@@ -18,33 +18,48 @@
       </p>
     </section>
     <main>
-      <h2>
+      <h2 class="header">
         This is not a real online service! You know you need something like this
         in your life to help you realize your deepest dreams. Sign up
         <em>now</em> to get started.
       </h2>
-      <h2>You <em>know</em> you want to!</h2>
-      <form action="POST">
-        <legend>Let's do this!</legend>
+      <h2 class="header">You <em>know</em> you want to!</h2>
 
-        <label for="first-name">FIRST NAME</label>
-        <input type="text" name="first-name" />
-
-        <label for="last-name">LAST NAME </label>
-        <input type="text" name="last-name" />
-
-        <label for="email">EMAIL</label>
-        <input type="email" name="email" />
-
-        <label for="phone">PHONE NUMBER</label>
-        <input type="tel" name="phone" />
-
-        <label for="pass">PASSWORD</label>
-        <input type="password" name="pass" />
-
-        <label for="conf-pass">CONFIRM PASSWORD</label>
-        <input type="password" name="conf-pass" />
-      </form>
+      <div class="signup">
+        <form>
+          <h3 class="title">Let's do this!</h3>
+          <div class="item_group">
+            <div class="item">
+              <label for="first_name">FIRST NAME</label>
+              <input type="text" id="first_name" name="first_name" />
+            </div>
+            <div class="item">
+              <label for="last_name">LAST NAME </label>
+              <input type="text" id="last_name" name="last_name" />
+            </div>
+          </div>
+          <div class="item_group">
+            <div class="item">
+              <label for="email">EMAIL</label>
+              <input type="email" id="email" name="email" />
+            </div>
+            <div class="item">
+              <label for="phone">PHONE NUMBER</label>
+              <input type="tel" id="phone" name="phone" />
+            </div>
+          </div>
+          <div class="item_group">
+            <div class="item">
+              <label for="pass">PASSWORD</label>
+              <input type="password" id="pass" name="pass" />
+            </div>
+            <div class="item">
+              <label for="conf_pass">CONFIRM PASSWORD</label>
+              <input type="password" id="conf_pass" name="conf_pass" />
+            </div>
+          </div>
+        </form>
+      </div>
     </main>
   </body>
 </html>
