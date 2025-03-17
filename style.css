@@ -72,6 +72,9 @@ h6 {
 }
 
 /* Style below here */
+a {
+  color: white;
+}
 
 body {
   display: flex;
@@ -88,6 +91,17 @@ div.logo {
 }
 div > img {
   height: 150px;
+}
+
+section > p {
+  color: white;
+  font-size: 14px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-inline: auto;
+  width: fit-content;
+  bottom: 10px;
 }
 
 h1 {
