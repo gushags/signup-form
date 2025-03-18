@@ -84,7 +84,7 @@ body {
 div.logo {
   position: absolute;
   width: 100%;
-  top: 17vh;
+  top: 13vh;
   display: flex;
   justify-content: center;
   background: rgb(19, 19, 19, 0.6);
@@ -106,7 +106,8 @@ section > p {
 }
 .signup {
   background: white;
-  padding: 40px 0;
+  padding: 20px 0;
+  box-shadow: 0 4px 2px -2px lightgray;
 }
 h1 {
   color: white;
@@ -160,6 +161,37 @@ input {
   border: 1px solid #e5e7eb;
   border-radius: 4px;
 }
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 6px 6px -6px gray;
+}
+
+input[type="password"]:invalid {
+  border: 1px solid red;
+}
+
 .title {
   padding-bottom: 15px;
+}
+
+button {
+  margin: 25px 0 20px 75px;
+  background-color: #596d48;
+  color: white;
+  border-radius: 10px;
+  border: none;
+  font-size: smaller;
+  font-weight: bold;
+  padding: 6px 30px;
+}
+.submit p {
+  margin-left: 75px;
+}
+
+.submit p a {
+  color: #596d48;
+  font-weight: bold;
+  text-decoration: none;
 }

@@ -26,7 +26,7 @@
       <h2 class="header">You <em>know</em> you want to!</h2>
 
       <div class="signup">
-        <form>
+        <form action="example.com/path" method="post" id="signup">
           <h3 class="title">Let's do this!</h3>
           <div class="item_group">
             <div class="item">
@@ -51,14 +51,29 @@
           <div class="item_group">
             <div class="item">
               <label for="pass">PASSWORD</label>
-              <input type="password" id="pass" name="pass" />
+              <!-- Minimum eight characters, at least one uppercase letter, one lowercase letter and one number, one special character. Min 8 characters, max 20 characters -->
+              <input
+                type="password"
+                id="pass"
+                name="pass"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+              />
             </div>
             <div class="item">
               <label for="conf_pass">CONFIRM PASSWORD</label>
-              <input type="password" id="conf_pass" name="conf_pass" />
+              <input
+                type="password"
+                id="conf_pass"
+                name="conf_pass"
+                pattern="^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*#?&])[A-Za-z\d@$!%*#?&]{8,}$"
+              />
             </div>
           </div>
         </form>
+      </div>
+      <div class="submit">
+        <button type="submit" form="signup">Create Account</button>
+        <p>Already have an account? <a href="#">Log in</a>.</p>
       </div>
     </main>
   </body>
